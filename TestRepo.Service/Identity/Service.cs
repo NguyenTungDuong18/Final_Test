@@ -10,7 +10,7 @@ public class Service : IService
 {
     private readonly AppDbContext _dbContext;
     private readonly JwtService.IService _jwtService;
-    private readonly JwtOptions  _jwtOptions;
+    private readonly JwtOptions  _jwtOptions = new();
 
     public Service(AppDbContext dbContext, JwtService.IService jwtService,IConfiguration configuration)
     {
